@@ -1,27 +1,6 @@
 <html>
 <body>
 <div id="app"></div>
-<section class="content">
-    <h2>Your Task</h2>
-    <h3>1. A Sorted table</h3>
-    <p>
-        Show those currency pairs in a table with rows for each currency pair, which
-        includes columns for at least the name, the current best bid price, current best ask price,
-        the amount that the best bid last changed, and the amount the best ask price last changed.
-        This data can be read out of the price updates that are sent via stomp.   There are a limited number
-        of currency pairs, and multiple updates will be sent for each one.  You should request the topic
-        <code>/fx/prices</code>, to receive update messages with a body that looks like this:
-    </p>
-    <p>
-        The table should be sorted (and remain sorted) by the column that indicates how much the best bid price
-        last changed (lastChangeBid in the response data).
-    </p>
-    <h3>2. Sparklines</h3>
-    <p>
-        The last column should be a sparkline which shows the midprice over the 30 seconds before the most recent update.
-        The midprice can be calculated by adding the bestBid and bestAsk fields together and dividing by 2.
-    </p>
-</section>
 <script src="bundle.js"></script>
 </body>
 </html>

@@ -33,7 +33,7 @@ module.exports = function(entries, output) {
     },
     devtool: 'eval-source-map',
     plugins: [
-      new webpack.HotModuleReplacementPlugin()
+      // new webpack.HotModuleReplacementPlugin()
     ]
   });
 

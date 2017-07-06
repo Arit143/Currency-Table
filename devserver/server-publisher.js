@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 const Stomp = require('stompjs');
 const util = require('util');
 
@@ -60,4 +60,4 @@ exports.start = function (stompUrl) {
     }, function () {
         util.log('Error starting Fake FX data service', arguments)
     })
-}
+};
